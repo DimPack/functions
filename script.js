@@ -48,10 +48,9 @@ numberChecksAndReports();
  */
 function numberDivisorHundred(value) {
     if(isNaN(value) || !value.trim() || value === ''|| value%100 !== 0) {
-        // return false
-        console.log(false);
+        return false
     } else {
-        console.log(true);
+        return true
     }
 }
 numberDivisorHundred('  dsdsdasd');
