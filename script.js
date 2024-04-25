@@ -76,3 +76,4 @@ function isTriangle(side1 = 3, side2 = 4, side3 = 5) {
 }
 isTriangle();
 isTriangle(8, 10, 14)
+
