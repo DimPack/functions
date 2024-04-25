@@ -9,14 +9,11 @@ const family = {
   'cat': 'Ray',
 } */
 
-<<<<<<< HEAD
 /**
  * 
  * @param {number} value 
  * @returns boolean
  */
-=======
->>>>>>> 0794490c7278c386ab9cfea13c06ccf7e7ef8c9c
 function validateNumberInput(value) {
     if (isNaN(value) || !value.trim() || value === '') {
         
@@ -25,7 +22,6 @@ function validateNumberInput(value) {
     }
     return true; 
 }
-<<<<<<< HEAD
 /**
  * 
  * @param {string} value 
@@ -34,23 +30,15 @@ function validateNumberInput(value) {
 function validateTextInput(value) {
     if (!isNaN(value) || !value.trim() || value === '') {
 
-=======
-function validateTextInput(value) {
-    if (!isNaN(value) || !value.trim() || value === '') {
-        
->>>>>>> 0794490c7278c386ab9cfea13c06ccf7e7ef8c9c
         alert('Сталося помилка! Введено некоректні дані. Спробуй ще раз!');
         return false
     }
     return true; 
 }
-<<<<<<< HEAD
 /**
  * 
  * @returns object
  */
-=======
->>>>>>> 0794490c7278c386ab9cfea13c06ccf7e7ef8c9c
 function userFamilyMembers() {
     const family = {};
     const minMembers = 2;

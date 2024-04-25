@@ -10,7 +10,7 @@
  */
 function numbersOverCheck(value1, value2) {
     if(typeof(value1) === typeof(value2)) {
-        return value1 > value2 ? value1 : value2
+        return value1 === value2 ? null : (value1 > value2 ? value1 : value2);
     } else {
         return null;
     }
@@ -25,7 +25,7 @@ numbersOverCheck(9, 54)
  */
 function numberChecksAndReports() {
     let value = prompt('Введіть своє число: ');
-    if(isNaN(value) || !value.trim() || value === '') {
+    if(!Number.isNaN(Number(value)) && value.trim() !== '') {
         return alert('це не число');
     } else {
         if (value > 0) {
@@ -47,7 +47,7 @@ numberChecksAndReports();
  * @returns boolean
  */
 function numberDivisorHundred(value) {
-    if(isNaN(value) || !value.trim() || value === ''|| value%100 !== 0) {
+    if(Number.isNaN(Number(value)) || !value.trim() || value === ''|| 100%value !== 0) {
         return false
     } else {
         return true
